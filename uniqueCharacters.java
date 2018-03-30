@@ -4,6 +4,8 @@ class Unique {
     for (int i = 0, len = s.length(); i < len; i++) {
       if (ascii_set[s.charAt(i)])
         return false;
+      else
+        ascii_set[s.charAt(i)] = true;
     }
     return true;
   }
